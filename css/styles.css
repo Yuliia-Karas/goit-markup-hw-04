@@ -117,6 +117,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
    }
 
 .card-color {
+    display: block;
     color: var(--color-dark);
 }
 
@@ -137,6 +138,9 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+     0px 1px 1px rgba(46, 47, 66, 0.16),
+     0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-nav {
@@ -309,11 +313,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-bottom: 8px;
 }
 
-.studio-features-svg-bg:hover,
-.studio-features-svg-bg:focus {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
 .studio-features-item {
     flex-basis: calc((100%-72px)/4);
 }
@@ -353,17 +352,19 @@ padding-bottom: 120px;
 }
 .team-item {
     background-color: var(--color-white);
-    box-shadow:  1px 6px rgba(46, 47, 66, 0.08),
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
         border-radius: 0px 0px 4px 4px;
      }
 
+ 
+
 .social-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 8px;
+    margin-top: 12px;
 }
 .social-list-link {
     display: flex;
@@ -415,6 +416,11 @@ border-radius: 4px;
 
 /* =================  / Our Customers ================== */
 /* ==================  Portfolio ================== */
+.portfolio-section {
+ padding-top: 96px;   
+ padding-bottom: 120px;
+}
+
 .card-color:hover,
 .card-color:focus {
    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -424,8 +430,7 @@ border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 96px;
-}
+    }
 
 .portfolio-item:not(:last-child) {
     padding-right: 24px;
