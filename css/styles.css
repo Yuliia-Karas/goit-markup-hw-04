@@ -64,7 +64,7 @@ background-color: var(--color-white);
     border-color: var(--color-accent);
     border: 1px solid var(--color-accent);
     border-radius: 4px;
-    padding: 4px 8px;
+    padding: 8px 16px 8px 16px;
     }
 
 .portfolio-btn:hover,
@@ -105,8 +105,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 8px;
-}
+    }
 
 .section-paragraph {
     font-weight: 400;
@@ -115,22 +114,18 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     letter-spacing: 0.02em;
     color: var(--color-text);
     margin-top: 8px;
-    margin-bottom: 8px;
-}
+   }
 
 .card-color {
     color: var(--color-dark);
 }
 
-.card-color:
 .container {
     width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-
 
 
 /* ============== /Components ================= */
@@ -164,6 +159,10 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     display: flex;
     align-items: center;
     margin-left: auto;
+}
+
+.menu-contacts-item {
+margin-right: 40px;
 }
 
 .menu-item:not(:last-child) {
@@ -212,9 +211,6 @@ margin-right: 77px;
     color: var(--color-primary-brand);
 }
 
-.contact-mail {
-margin-right: 40px;
-}
 /* 
 .contact-phone-number {
     margin-left: auto;
@@ -239,16 +235,14 @@ margin-right: 40px;
     padding-top: 192px;
     padding-bottom: 192px;
     width: 1440px;
-    height: 603px;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--color-dark);
     background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url("../images/hero/bg.jpg");
     background-size: cover;
-    background-color: rgb(46, 47, 66);
-    opacity: 0.7;
+    background-color: rgba(46, 47, 66, 1);
+    
 }
 
 .hero-title {
@@ -307,12 +301,12 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 .studio-features-svg-bg {
     display: flex;
-        justify-content: center;
-        align-items: center;
-    width: 264px;
+    justify-content: center;
+    align-items: center;
     height: 112px;
     background-color: #F4F4FD;
     border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 .studio-features-svg-bg:hover,
@@ -359,7 +353,6 @@ padding-bottom: 120px;
 }
 .team-item {
     background-color: var(--color-white);
-    margin-bottom: 8px;
     box-shadow:  1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -370,6 +363,7 @@ padding-bottom: 120px;
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-top: 8px;
 }
 .social-list-link {
     display: flex;
@@ -407,16 +401,23 @@ justify-content: center;
 align-items: center;
 width: 168px;
 height: 88px;
+fill: rgba(46, 47, 66, 0.4);
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
+}
+
+.our-customers-link:hover,
+.our-customers-link:focus {
+    fill: rgba(77, 90, 229, 1);
+    border: 1px solid rgba(77, 90, 229, 1);
 }
 
 
 /* =================  / Our Customers ================== */
 /* ==================  Portfolio ================== */
-.portfolio-card:hover {
-    border: 0.5px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+.card-color:hover,
+.card-color:focus {
+   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-menu-list {
@@ -444,7 +445,7 @@ padding-bottom: 32px;
 padding-left: 16px;
 padding-right: 16px;
 border: 0.5px solid var(--color-light);
-border-top: 0px;
+border-top: none;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /* ==================  /Portfolio ================== */
@@ -461,17 +462,17 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .footer-container {
-    width: 1440px;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-    gap: 120px;
     background-color: var(--color-dark);
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 156px;
-}
+   }
 
+.footer-position {
+display: flex;
+justify-content:flex-start;
+align-items: baseline;
+gap: 120px;
+}
 .social-media-paragraph {
     font-weight: 600;
     font-size: 16px;
@@ -483,13 +484,11 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 
 .link-bg {
     background-color: rgba(255, 255, 255, 0.1);
-    
 }
 
 .link-bg:hover,
 .link-bg:focus {
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border: 1px solid rgba(0, 0, 0, 1);
 }
 /* ================== /Footer ================== */
 
